@@ -25,3 +25,13 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.container {
+  position:absolute;
+}
+
+.pic{
+  height: 200px;
+  width: 200px;
+  position:absolute;
+}
