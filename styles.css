@@ -3,14 +3,17 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /* background-color:#444; */
   font-size: 18px;
+  background-image: url("background.jpg");
+  background-size: 600px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
+.title, .addDancerButton {
+  padding:5px 20px;
+  border: 5px silver; 
   float:right;
 }
 .topbar{
@@ -20,18 +23,45 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
+
+/*display pikachu img*/
+.dancer {
+  height: 100px;
+  width: 100px;
+  content: url("pikachu.png");
   position:absolute;
+} 
+
+.corgidancer {
+  height: 100px;
+  width: 100px;
+  content: url("corgii.gif");
+  position:absolute;
+} 
+
+/* display corgi img
+.addPokeDancerButton {
+  height: 100px;
+  width: 100px;
+  content : url("corgi.jpg");
+  position:absolute;
+} */
+
+
+.pikachuuuu{
+  -webkit-animation-name: pikachu; 
+  -webkit-animation-duration: 4s; 
+  animation-name: pikachu;
+  animation-duration: 4s;
 }
 
-.container {
-  position:absolute;
+@keyframes pikachu {
+  0%   {width: 100px; height: 100px;}
+  25%  {width: 1px; height: 1px;}
+  50%  {width: 100px; height: 100px;}
+  75%  {width: 1px; height: 1px;}
+  100%  {width: 120px; height: 120px;}
 }
 
-.pic{
-  height: 200px;
-  width: 200px;
-  position:absolute;
-}
+
+
